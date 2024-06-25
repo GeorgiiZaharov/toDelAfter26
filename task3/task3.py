@@ -7,4 +7,6 @@ for str in strs:
         dictionary[sorted_str] = [str]
     else:
         dictionary[sorted_str].append(str)
-list(map(print, dictionary.values()))
+# list(map(print, dictionary.values()))  если выпендрится
+for i in dictionary.values():
+    print(i)
